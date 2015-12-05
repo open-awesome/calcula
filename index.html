@@ -21,26 +21,30 @@
           <p>Digite tres valores que somados resultem em <strong>212</strong></p>
         </div>
         <script type="text/javascript">
-          var primeiro;
-          var segundo;
-          var terceiro;
+          var v1;
+          var v2;
+          var v3;
           var calculo;
           function start () {
-            primeiro = prompt("Digite primeiro valor", "0 á 100");
-            segundo = prompt("Digite primeiro valor", "0 á 100");
-            terceiro = prompt("Digite primeiro valor", "0 á 100");
-            calculo = primeiro + segundo + terceiro;
-            return document.write(calculo + ' é o resultado');
+            v1 = document.getElementById("p").value;
+            v2 = document.getElementById("s").value;
+            v3 = document.getElementById("t").value;
+            calculo = parseInt(v1) + parseInt(v2) + parseInt(v3); 
+            // Confirmação
+            if (calculo == 212) {
+              document.write("<h1>AAAAAHH SEU 99% ANJO... VOCÊ ACERTOU [" + calculo + "]</h1>");
+              document.write("<br><img src='img/s.jpg' class='tam50'>");
+            } else {
+              document.write("<h1>AAAAAHH SEU SAFADÃO... VOCÊ ERROU [" + calculo + "]</h1>");
+              document.write("<br><img src='img/e.jpg' class='tam50'>");
+            }
           }
-          start();
-          if (calculo == 212) {
-            document.write("<h1>AAAAAHH SEU 99% ANJO.. VOCÊ ACERTOU</h1>");
-            document.write("<br><img src='img/s.jpg' class='tam50'>");
-          } else{
-            document.write("<h1>AAAAAHH SEU 1% SAFADÃO.. VOCÊ ERROU</h1>");
-            document.write("<br><img src='img/e.jpg' class='tam50'>");
-          };
         </script>
+          <input type="text" class="tam80-esp bran" id="p" placeholder="Primeiro valor">
+          <input type="text" class="tam80-esp bran" id="s" placeholder="Segundo valor">
+          <input type="text" class="tam80-esp bran" id="t" placeholder="Terceiro valor">
+          <br><br>
+          <button onclick="start()" class="bto med azul-3">Calcula ai safadão</button>
       </div>
     </section>
 
