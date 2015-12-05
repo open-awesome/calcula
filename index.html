@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<!-- Indentação padrão: 2 SPACE -->
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="author" content="Biblioteca Kajado"/>
+    <meta name="Resource-type" content="document"/>
+    <meta name="Robots" content="all"/>
+    <meta name="Rating" content="general"/>
+    <title>Calcula</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link href="css/kajado.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript">
+      function start () {
+        var primeiro = prompt("Digite primeiro valor", "0 á 100");
+        var segundo = prompt("Digite primeiro valor", "0 á 100");
+        var terceiro = prompt("Digite primeiro valor", "0 á 100");
+
+        var calculo = primeiro + segundo + terceiro;
+
+      }
+    </script>
+
+  </head>
+  <body>
+  
+    <!-- Corpo -->
+    <section class="area">
+      <div class="esp-min">
+        <h1 class="h1">Calculadora para safadões</h1>
+        <div class="texto">
+          <p>Digite tres valores que somados resultem em <strong>212</strong></p>
+          <button onclick="start()" class="bto med azul">Iniciar calculo safadão</button>
+        </div>
+        <script type="text/javascript">
+        var calculo = 3;
+          document.write(calculo + ' é o resultado');
+        </script>
+        <br>
+        <img src="img/w.png" class="tam50">
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="area mar-top bord-top-min bord-cinz">
+      <div class="f-cen mar-tb">
+        <p>Exercicio básico de Javascript</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
